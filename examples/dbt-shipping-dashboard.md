@@ -25,6 +25,6 @@ Development required building extensive data validation and preprocessing pipeli
 
 These pipelines revealed significant issues with data quality. Recognising this as critical, I temporarily shifted focus to data validation, comparing versions across years to identify drift (hypothesis testing), and documented findings for the data provider to address before continuing development.
 
-For the dashboard interface, I used Streamlit for rapid prototyping, Postgres for data ingestion, and implemented caching and callback functions to optimise performance. I ensured accessibility through custom HTML/CSS with screen-reader features and colour-blind-safe palettes.
+For the dashboard interface, I used Streamlit for rapid prototyping and Postgres for data ingestion. Visualisations that users needed to filter, zoom, or drill into were built in Plotly for the interactivity; simpler, static summary charts used Seaborn instead, so I wasn't paying Plotly's overhead where interactivity wasn't the point. I optimised performance through caching and callback functions to keep the dashboard responsive against Postgres queries at scale, and ensured accessibility through custom HTML/CSS with screen-reader features and colour-blind-safe palettes.
 
 The dashboard now serves as a central asset for multi-team crisis response, substantially reducing analytical turnaround times and transforming data issue detection from months to immediate identification.
