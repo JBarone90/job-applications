@@ -20,6 +20,7 @@
 ---
 
 ### Seeing the big picture
+
 **Definition:** Understand how your role fits with and supports organisational objectives. Recognise the wider Civil Service priorities and ensure work is in the national interest.
 
 **HEO/SEO:** Understand strategic drivers for your area; align activities to wider priorities; remain alert to emerging issues and trends; seek out and share experiences; understand how strategies create value and meet diverse stakeholder needs.
@@ -29,6 +30,7 @@
 ---
 
 ### Changing and improving
+
 **Definition:** Seek out opportunities to create effective change and suggest innovative ideas for improvement. Review ways of working, including seeking and providing feedback.
 
 **HEO/SEO:** Work with others to identify areas for improvement and simplify processes; use technology to increase efficiency; encourage ideas from a wide range of sources; clearly explain reasons for change; encourage an environment where colleagues can challenge decisions safely; take managed risks considering varied impacts on diverse end users.
@@ -38,6 +40,7 @@
 ---
 
 ### Making effective decisions
+
 **Definition:** Use evidence and knowledge to support accurate, expert decisions and advice. Carefully consider alternative options, implications and risks of decisions.
 
 **HEO/SEO:** Understand your own level of responsibility and empower others to make decisions where appropriate; analyse and use a range of relevant credible information from internal and external sources; invite challenge and involve others in decision making where appropriate; display confidence when making difficult decisions even if unpopular; consult with others to ensure potential impacts on end users are considered; present strong recommendations in a timely manner outlining consideration of other options, costs, benefits and risks.
@@ -47,6 +50,7 @@
 ---
 
 ### Leadership
+
 **Definition:** Show pride and passion for public service. Create and engage others in delivering a shared vision. Value difference, diversity and inclusion, ensuring fairness and opportunity for all.
 
 **HEO/SEO:** Ensure colleagues and stakeholders have a clear understanding of objectives, activities and time-frames; take into account different individual needs, views and ideas, championing inclusion and equality of opportunity for all; consider the impacts of your own and your team's activities on stakeholders and end users; role-model commitment and satisfaction with the role; recognise and praise achievements of others to drive positivity within the team; effectively manage conflict, misconduct and non-inclusive behaviour, raising with senior managers where appropriate.
@@ -56,6 +60,7 @@
 ---
 
 ### Communicating and influencing
+
 **Definition:** Communicate purpose and direction with clarity, integrity and enthusiasm. Respect the needs, responses and opinions of others.
 
 **HEO/SEO:** Communicate in a straightforward, honest and engaging manner, choosing appropriate styles to maximise understanding and impact; encourage use of different communication methods including digital resources and highlight the benefits including cost effectiveness; ensure communication has a clear purpose and takes into account people's individual needs; share information as appropriate and check understanding; show positivity and enthusiasm towards work, encouraging others to do the same; ensure important messages are communicated with colleagues and stakeholders respectfully, taking into consideration diversity of interests.
@@ -65,6 +70,7 @@
 ---
 
 ### Working together
+
 **Definition:** Form effective partnerships and relationships with people both internally and externally, from a range of diverse backgrounds, sharing information, resources and support.
 
 **HEO/SEO:** Encourage joined-up team work within your own team and across other groups; establish professional relationships with a range of stakeholders; collaborate with these to share information, resources and support; invest time to develop a common focus and genuine positive team spirit where colleagues feel valued and respect one another; put in place support for the wellbeing of individuals within the team, including consideration of your own needs; make it clear to all team members that bullying, harassment and discrimination are unacceptable; actively seek and consider input from people of diverse backgrounds and perspectives.
@@ -74,6 +80,7 @@
 ---
 
 ### Developing self and others
+
 **Definition:** Focus on continuous learning and development for self, others and the organisation as a whole.
 
 **HEO/SEO:** Identify capability gaps for yourself and your team; ensure development objectives are set and achieved to address any gaps and enable delivery of current and future work; take time to coach, mentor and develop other colleagues to support succession planning; promote inclusiveness by respecting different personal needs in the team and use these to develop others; reflect on your own work, continuously seek and act on feedback to improve your own and your team's performance.
@@ -83,6 +90,7 @@
 ---
 
 ### Managing a quality service
+
 **Definition:** Deliver service objectives with professional excellence, expertise and efficiency, taking account of diverse customer needs.
 
 **HEO/SEO:** Develop, implement, maintain and review systems and services to ensure delivery of professional excellence; work with stakeholders to set priorities, objectives and timescales; successfully deliver high quality outcomes that meet the customers' needs and give value for money; identify risks and resolve issues efficiently; involve a diverse range of colleagues, stakeholders and delivery partners in developing suggestions for improvements; establish ways to find and respond to feedback from customers about services provided.
@@ -92,6 +100,7 @@
 ---
 
 ### Delivering at pace
+
 **Definition:** Take responsibility for delivering timely and quality results with focus and drive.
 
 **HEO/SEO:** Show a positive approach to keeping the whole team's efforts focused on top priorities; promote a culture of following appropriate procedures to ensure results are achieved on time whilst still enabling innovation; ensure the most appropriate resources are available for colleagues to use to do their job effectively; regularly monitor your own and your team's work against milestones, ensuring individual needs are considered when setting tasks; act promptly to reassess workloads and priorities when there are conflicting demands to maintain performance; allow individuals space and authority to meet objectives, providing additional support where necessary, whilst keeping overall responsibility.
