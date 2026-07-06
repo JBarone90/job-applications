@@ -1,10 +1,17 @@
 ---
 company: Department for Business and Trade
 context: L&D slot, DBT Data Science forum
-tags: [ml-technical-depth, mlops-deployment, upskilling-colleagues, communicating-and-influencing, developing-self-and-others]
+tags:
+  [
+    ml-technical-depth,
+    mlops-deployment,
+    upskilling-colleagues,
+    communicating-and-influencing,
+    developing-self-and-others,
+  ]
 ---
 
-## Technical skill - Data Science
+# Technical skill - Data Science
 
 Theoretical understanding of and expertise utilising data science techniques for a range of applications (e.g. natural language processing, classification, forecasting, regression).
 

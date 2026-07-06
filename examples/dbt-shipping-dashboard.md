@@ -1,10 +1,19 @@
 ---
 company: Department for Business and Trade
 context: Self-service containerised shipping dashboard, working with DfT and ONS Data Science Campus
-tags: [project-delivery, cloud-databricks, data-quality, accessibility, stakeholder-consultation, seeing-the-big-picture, changing-and-improving]
+tags:
+  [
+    project-delivery,
+    cloud-databricks,
+    data-quality,
+    accessibility,
+    stakeholder-consultation,
+    seeing-the-big-picture,
+    changing-and-improving,
+  ]
 ---
 
-## Project management & Technical skill - Programming
+# Project management & Technical skill - Programming
 
 Leading impactful data science projects from inception to production by setting a clear direction and delivering on milestones.
 
