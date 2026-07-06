@@ -5,10 +5,11 @@ Per-application drafted content that has no "master" version to maintain on `mai
 ## Convention
 
 ```text
+applications/<company>-<role-slug>/personal-statement.md
 applications/<company>-<role-slug>/behaviours.md
 ```
 
-Created on that application's `draft` branch alongside the CV tailoring commit, and preserved permanently via the same `sent/<company>-<role-slug>-<YYYY-MM>` tag. Once the branch is deleted, the folder disappears from `main` too — recover it with:
+Not every application needs both — use whichever the JD's Success Profile stage actually asks for. Created on that application's `draft` branch alongside the CV tailoring commit, and preserved permanently via the same `sent/<company>-<role-slug>-<YYYY-MM>` tag. Once the branch is deleted, the folder disappears from `main` too — recover it with:
 
 ```bash
 git checkout sent/<company>-<role-slug>-<YYYY-MM> -- applications/<company>-<role-slug>/

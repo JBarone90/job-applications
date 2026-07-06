@@ -6,7 +6,8 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 Tooling for Jacopo Barone's job applications:
 - A XeLaTeX CV built with the [Awesome-CV](https://github.com/posquit0/Awesome-CV) class (`awesome-cv.cls`). Single-column layout, one page, targeting Data Science and Neuroscience roles.
-- UK civil service behavioural (Success Profile) answers, drafted per application — see [Civil service behavioural answers](#civil-service-behavioural-answers) below.
+- UK civil service Success Profile applications (personal statements, behavioural/STAR answers), drafted per application — see [Civil service Success Profile applications](#civil-service-success-profile-applications) below.
+- `examples/` — a permanent library of full, unabridged achievement write-ups that both the CV bullets and the Success Profile content are distilled from.
 
 ## Building
 
@@ -31,6 +32,9 @@ This runs `xelatex Jacopo_cv.tex` twice inside `texlive/texlive:latest-full` and
 | `fonts/` | Bundled fonts referenced via `\fontdir[fonts/]` |
 | `logos/` | Institution/company logos used in entries |
 | `references.bib` | BibTeX entries (biblatex wiring is commented out) |
+| `examples/` | Permanent library of full achievement write-ups, tagged by criteria/behaviour — source material for CV bullets, personal statements, and behavioural answers |
+| `reference/` | External reference material (e.g. the Civil Service Behaviours framework) |
+| `applications/<company>-<role>/` | Per-application drafted output (personal statements, behavioural answers) — not persisted on `main` |
 
 ## Writing rule
 
@@ -117,15 +121,17 @@ Notes: <any angle you want to emphasise, optional>
 | Great Expectations bullet (DBT) | `cv/experience.tex` | Uncomment |
 | SLURM/HPC bullet (PhD) | `cv/experience.tex` | Uncomment |
 
-## Civil service behavioural answers
+## Civil service Success Profile applications
 
-For UK government roles assessed against the Success Profiles Behaviours framework, tailoring means drafting new STAR-format answers per application rather than selecting from existing content — there's no single master version, since each vacancy asks for different behaviours at different levels.
+For UK government roles assessed against Success Profiles, tailoring means drafting new content per application rather than selecting from existing content — there's no single master version, since each vacancy asks for a different mix of essential criteria, personal statement word limits, and behaviours at different levels.
 
+- **`examples/`** — the first place to look for real supporting material. Full, unabridged achievement write-ups tagged by criteria/behaviour (see `examples/README.md`), reusable across applications. Search here before asking Jacopo for a new story — most essential criteria and behaviours already have a genuine example on file.
 - **`reference/civil-service-behaviours.md`** — framework text fetched from the live gov.uk page, trimmed to the HEO/SEO and Grade 7/Grade 6 tiers (Jacopo's realistic application range — SEO up to Grade 6). Consult this for exact behaviour definitions and level indicators rather than relying on general knowledge of the framework. If a JD asks for a grade outside that range, flag it — don't improvise. See `reference/README.md` for provenance and how to refresh it.
-- **`applications/<company>-<role>/behaviours.md`** — the drafted answers for one application. Created on that application's `draft` branch, committed alongside the CV tailoring, and preserved via the same `sent/*` tag. It does not persist on `main` after the branch is deleted (see `applications/README.md`) — this mirrors how a tailored `cv/summary.tex` is only "current" for the branch it was written on.
-- **`/civil-service-behaviours`** — the agent that drafts these answers. Run it after `/jd-parser` has identified the role's required behaviours (JD `Type: government`). It reads `reference/civil-service-behaviours.md` and the real experience in `cv/experience.tex`/`cv/education.tex`, and will flag rather than paper over any behaviour with no genuine supporting example.
-- Respect whatever word/character limit the JD states for each behaviour — these vary by vacancy, never assume a default.
-- Run `/writing-coach` on `behaviours.md` before submitting, same as CV prose.
+- **`applications/<company>-<role>/`** — per-application drafted output: `personal-statement.md` (essential-criteria statement, one section per criterion, respecting the JD's stated word limit) and/or `behaviours.md` (STAR-format behaviour answers). Created on that application's `draft` branch, committed alongside the CV tailoring, and preserved via the same `sent/*` tag. Neither persists on `main` after the branch is deleted (see `applications/README.md`) — this mirrors how a tailored `cv/summary.tex` is only "current" for the branch it was written on.
+- Many sifts require an **anonymous** CV/statement (no name or identifying details). The `Jacopo_cv.tex` header (`\name`, email, GitHub, LinkedIn) is not anonymous — tailor the CV content first as the source of truth, then extract and anonymise it separately for portal submission rather than trying to strip identity from the LaTeX template itself.
+- **`/civil-service-behaviours`** — the agent that drafts STAR-format behaviour answers. Run it after `/jd-parser` has identified the role's required behaviours (JD `Type: government`). It reads `examples/`, `reference/civil-service-behaviours.md`, and `cv/experience.tex`/`cv/education.tex`, and will flag rather than paper over any behaviour with no genuine supporting example. Personal statements are drafted directly (same as CV prose), also grounded in `examples/`.
+- Respect whatever word/character limit the JD states for each behaviour or personal statement — these vary by vacancy, never assume a default.
+- Run `/writing-coach` on `personal-statement.md`/`behaviours.md` before submitting, same as CV prose.
 
 ## Authoring conventions
 

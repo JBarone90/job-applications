@@ -1,6 +1,6 @@
 # Jacopo Barone's Job Applications
 
-Tooling for Jacopo Barone's job applications: a XeLaTeX CV built with [Awesome-CV](https://github.com/posquit0/Awesome-CV), plus civil service behavioural (Success Profile) answers for UK government roles.
+Tooling for Jacopo Barone's job applications: a XeLaTeX CV built with [Awesome-CV](https://github.com/posquit0/Awesome-CV), civil service Success Profile applications for UK government roles, and a permanent library of source examples both draw from.
 
 ---
 
@@ -72,10 +72,17 @@ See `CLAUDE.md` for authoring conventions, content integrity rules, and the full
 
 ---
 
-## Civil service behavioural answers
+## Examples library
 
-For UK government roles that use the Success Profiles framework, behavioural (STAR-format) answers are drafted per application rather than kept as master content — there's no single "current" version to tailor, each application asks for different behaviours at different levels.
+`examples/` holds full, unabridged achievement write-ups — the raw material both the CV bullets and the Success Profile content below are distilled from. It's permanent, tagged by criteria/behaviour, and lives on `main` like the CV does. See `examples/README.md`.
+
+---
+
+## Civil service Success Profile applications
+
+For UK government roles that use Success Profiles, personal statements and behavioural (STAR-format) answers are drafted per application rather than kept as master content — there's no single "current" version to tailor, each application asks for a different mix of essential criteria, word limits, and behaviours at different levels.
 
 - **`reference/`** — the official Civil Service Behaviours framework, fetched from gov.uk and trimmed to the HEO/SEO and Grade 7/Grade 6 tiers (Jacopo's realistic application range), consulted when drafting answers.
-- **`applications/<company>-<role>/behaviours.md`** — the drafted STAR answers for a specific application, created on that application's `draft` branch and preserved via its `sent/*` tag, same as CV tailoring.
-- **`/civil-service-behaviours`** — the Claude Code agent that drafts these answers, grounded only in real experience (see `CLAUDE.md`'s content integrity rule) and checked against the official behaviour definitions in `reference/`.
+- **`applications/<company>-<role>/`** — the drafted `personal-statement.md` and/or `behaviours.md` for a specific application, created on that application's `draft` branch and preserved via its `sent/*` tag, same as CV tailoring.
+- **`/civil-service-behaviours`** — the Claude Code agent that drafts STAR-format behaviour answers, grounded in `examples/` and real CV experience (see `CLAUDE.md`'s content integrity rule) and checked against the official behaviour definitions in `reference/`. Personal statements are drafted directly, same as CV prose.
+- Many sifts require an anonymous CV/statement — see `CLAUDE.md` for how that's handled given the LaTeX template isn't anonymous by default.
