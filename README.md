@@ -1,6 +1,6 @@
-# Jacopo Barone's CV
+# Jacopo Barone's Job Applications
 
-XeLaTeX source for Jacopo Barone's CV, built with [Awesome-CV](https://github.com/posquit0/Awesome-CV). Single-column, one-page layout for Data Science and Neuroscience roles.
+Tooling for Jacopo Barone's job applications: a XeLaTeX CV built with [Awesome-CV](https://github.com/posquit0/Awesome-CV), plus civil service behavioural (Success Profile) answers for UK government roles.
 
 ---
 
@@ -58,12 +58,24 @@ This keeps the branch list clean while preserving a permanent, rebuildable snaps
 
 ### Tailoring tools
 
-Two Claude Code agents assist with the process:
+Three Claude Code agents assist with the process:
 
 **`/jd-parser`** — point it at a job posting (URL, PDF, Word file, or pasted text) and it extracts the role details and key requirements into a structured format ready for tailoring.
 
 **`/writing-coach`** — reads the active CV files and flags AI-voice patterns (filler adverbs, clichés, verb monotony, nominalisation) with suggested rewrites. Run it before every submission.
 
+**`/civil-service-behaviours`** — for government roles, drafts STAR-format behavioural answers for the behaviours a JD asks for (see below).
+
 The Python tooling (`tools/parse_jd.py`) handles file extraction; dependencies are managed with `uv` (`uv sync` to set up).
 
 See `CLAUDE.md` for authoring conventions, content integrity rules, and the full list of toggleable content.
+
+---
+
+## Civil service behavioural answers
+
+For UK government roles that use the Success Profiles framework, behavioural (STAR-format) answers are drafted per application rather than kept as master content — there's no single "current" version to tailor, each application asks for different behaviours at different levels.
+
+- **`reference/`** — the official Civil Service Behaviours framework, fetched from gov.uk and trimmed to the HEO/SEO and Grade 7/Grade 6 tiers (Jacopo's realistic application range), consulted when drafting answers.
+- **`applications/<company>-<role>/behaviours.md`** — the drafted STAR answers for a specific application, created on that application's `draft` branch and preserved via its `sent/*` tag, same as CV tailoring.
+- **`/civil-service-behaviours`** — the Claude Code agent that drafts these answers, grounded only in real experience (see `CLAUDE.md`'s content integrity rule) and checked against the official behaviour definitions in `reference/`.

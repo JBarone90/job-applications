@@ -4,7 +4,9 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## What this repo is
 
-XeLaTeX source for Jacopo Barone's CV, built with the [Awesome-CV](https://github.com/posquit0/Awesome-CV) class (`awesome-cv.cls`). Single-column layout, one page, targeting Data Science and Neuroscience roles.
+Tooling for Jacopo Barone's job applications:
+- A XeLaTeX CV built with the [Awesome-CV](https://github.com/posquit0/Awesome-CV) class (`awesome-cv.cls`). Single-column layout, one page, targeting Data Science and Neuroscience roles.
+- UK civil service behavioural (Success Profile) answers, drafted per application — see [Civil service behavioural answers](#civil-service-behavioural-answers) below.
 
 ## Building
 
@@ -32,13 +34,14 @@ This runs `xelatex Jacopo_cv.tex` twice inside `texlive/texlive:latest-full` and
 
 ## Writing rule
 
-**Always run `/writing-coach` after writing or editing any prose** — CV content (`cv/summary.tex`, `cv/experience.tex`) or the README. Do not commit prose changes without a writing-coach pass first.
+**Always run `/writing-coach` immediately after producing or editing any prose** — CV content (`cv/summary.tex`, `cv/experience.tex`), behavioural answers (`applications/*/behaviours.md`), or the README. This is automatic orchestration, not a step the user needs to request: whether the text was written directly or drafted by `/jd-parser` → `/civil-service-behaviours`, chain straight into `/writing-coach` before presenting the draft, not just before committing. Do not commit prose changes without a writing-coach pass first.
 
 ## Content integrity
 
 - **Never fabricate** — do not invent metrics, achievements, tools, or responsibilities Jacopo did not perform. Reframing and emphasising real work is encouraged; crossing into fiction is not.
 - Adapt existing bullet text creatively (stronger verbs, sharper framing, JD-mirrored language) but only if the underlying claim remains true.
 - If a JD requires a skill or experience genuinely absent from the CV, flag the gap explicitly rather than papering over it.
+- This applies equally to behavioural (STAR) answers: a real example reframed to fit a behaviour's language is fine; an invented situation or result is not.
 
 ## ATS compatibility
 
@@ -62,8 +65,8 @@ Use a single reusable `draft` branch for active tailoring. The full history is p
 # Start a new application
 git checkout main && git checkout -b draft
 
-# Tailor the CV files, then commit the changes
-git add cv/summary.tex cv/experience.tex  # (and any other modified files)
+# Tailor the CV files (and draft applications/<company>-<role>/behaviours.md for government roles), then commit
+git add cv/summary.tex cv/experience.tex applications/  # (and any other modified files)
 git commit -m "chore: tailor for <company> <role>"
 
 # Tag the tailored commit (while still on draft, before switching back)
@@ -113,6 +116,16 @@ Notes: <any angle you want to emphasise, optional>
 | 3rd bullet per role | `cv/experience.tex` | Uncomment the `% \item {…}` lines |
 | Great Expectations bullet (DBT) | `cv/experience.tex` | Uncomment |
 | SLURM/HPC bullet (PhD) | `cv/experience.tex` | Uncomment |
+
+## Civil service behavioural answers
+
+For UK government roles assessed against the Success Profiles Behaviours framework, tailoring means drafting new STAR-format answers per application rather than selecting from existing content — there's no single master version, since each vacancy asks for different behaviours at different levels.
+
+- **`reference/civil-service-behaviours.md`** — framework text fetched from the live gov.uk page, trimmed to the HEO/SEO and Grade 7/Grade 6 tiers (Jacopo's realistic application range — SEO up to Grade 6). Consult this for exact behaviour definitions and level indicators rather than relying on general knowledge of the framework. If a JD asks for a grade outside that range, flag it — don't improvise. See `reference/README.md` for provenance and how to refresh it.
+- **`applications/<company>-<role>/behaviours.md`** — the drafted answers for one application. Created on that application's `draft` branch, committed alongside the CV tailoring, and preserved via the same `sent/*` tag. It does not persist on `main` after the branch is deleted (see `applications/README.md`) — this mirrors how a tailored `cv/summary.tex` is only "current" for the branch it was written on.
+- **`/civil-service-behaviours`** — the agent that drafts these answers. Run it after `/jd-parser` has identified the role's required behaviours (JD `Type: government`). It reads `reference/civil-service-behaviours.md` and the real experience in `cv/experience.tex`/`cv/education.tex`, and will flag rather than paper over any behaviour with no genuine supporting example.
+- Respect whatever word/character limit the JD states for each behaviour — these vary by vacancy, never assume a default.
+- Run `/writing-coach` on `behaviours.md` before submitting, same as CV prose.
 
 ## Authoring conventions
 
