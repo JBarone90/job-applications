@@ -38,7 +38,7 @@ This runs `xelatex Jacopo_cv.tex` twice inside `texlive/texlive:latest-full` and
 
 ## Writing rule
 
-**Always run `/writing-coach` immediately after producing or editing any prose** — CV content (`cv/summary.tex`, `cv/experience.tex`), behavioural answers (`applications/*/behaviours.md`), or the README. This is automatic orchestration, not a step the user needs to request: whether the text was written directly or drafted by `/jd-parser` → `/civil-service-behaviours`, chain straight into `/writing-coach` before presenting the draft, not just before committing. Do not commit prose changes without a writing-coach pass first.
+**Run `/writing-coach` when finalising a product** — a CV, personal statement, or set of behavioural answers that's about to be presented as done or committed — not after every incremental edit. Do not commit a finished prose artifact without a writing-coach pass first. Mid-draft iterations (tightening a paragraph, fixing a word count, swapping a bullet) don't each need their own pass. The user can also ask for a writing-coach pass at any point ("please run the writing coach") — run it on request regardless of whether the draft is finished.
 
 ## Content integrity
 
