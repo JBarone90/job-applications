@@ -18,11 +18,11 @@ tags:
   ]
 ---
 
-## People management
+# Project Lead
 
 Supporting and motivating a team to deliver excellence and derive fulfilment from their roles.
 
-I led the technical supervision of 8 analysts and data scientists across three government organisations (DBT, DfT, ONS) to deliver an experimental publication linking UK Bill of Lading data with AIS vessel-tracking information. Each analyst worked within their own departmental structure — this was cross-government technical coordination, not formal line management — and I set direction and provided support across the distributed team. I structured the project around each department's comparative strength rather than running every workstream the same way: DBT owned the shipping data and built the deepest understanding of it, ONS brought its expertise in the AIS tracking system, and DfT supplied the maritime traffic knowledge that helped interpret some of the findings. I set this division of labour, along with a phased timeline and expected outcomes per stage, out in a project roadmap at the outset.
+I technically supervised 8 analysts and data scientists across three government organisations (DBT, DfT, ONS) to deliver an experimental publication linking UK Bill of Lading data with AIS vessel-tracking information. Each analyst worked within their own departmental structure. This was cross-government technical coordination, not formal line management, and I set direction and provided support across the distributed team. I structured the project around each department's comparative strength rather than running every workstream the same way: DBT owned the shipping data and built the deepest understanding of it, ONS brought its expertise in the AIS tracking system, and DfT supplied the maritime traffic knowledge that helped interpret some of the findings. I set this division of labour, along with a phased timeline and expected outcomes per stage, out in a project roadmap at the outset.
 
 Technically, a crossing was detected from each ship's AIS position data: a vessel counts as having transited a passage when its track intersects both an entry and an exit polygon around it (sourced from DfT, widened for passages like Suez to guarantee a genuine intersection), applied across six critical straits — Dover, Suez, Bab-Al Mandab, Hormuz, Cape of Good Hope, and Taiwan. Linking that to Bill of Lading shipping-instruction data let us follow containerised cargo near real-time, not just ship movements. It proved out in practice: during the early-2024 Middle East disruption, the method picked up a 68% drop in cargo-ship crossings through Bab-Al Mandab, matched by a rise in traffic diverting around the Cape of Good Hope.
 

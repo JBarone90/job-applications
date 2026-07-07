@@ -1,9 +1,21 @@
 ---
 company: Department for Business and Trade
 context: dq-agent — independent data-quality contract-authoring toolkit (currently pitching at division level / Firebreak, not yet adopted)
-tags: [genai-agent, llm-orchestration, security-by-design, data-quality, changing-and-improving, seeing-the-big-picture, leadership-initiative, human-in-the-loop]
+tags:
+  [
+    genai-agent,
+    llm-orchestration,
+    security-by-design,
+    data-quality,
+    changing-and-improving,
+    seeing-the-big-picture,
+    leadership-initiative,
+    human-in-the-loop,
+  ]
 source: https://github.com/JBarone90/dq-agent (public demo on main; the department's air-gapped Bedrock deployment is on branch feat/bedrock-proxy-adapter)
 ---
+
+# AI
 
 I identified a standing gap in the department: no standard process for building data-quality monitoring pipelines. Two causes stood out. First, there was no shared rule vocabulary or infrastructure — every team that wanted data quality checks built its own from scratch. Second, there's a structural gap between the people who understand a dataset (analysts, domain owners) and the people who know how to build and operate a monitoring pipeline (engineers), so getting from "we should check this" to a running pipeline routinely stalled.
 
