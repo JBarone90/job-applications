@@ -605,7 +605,7 @@
 
 % Education list wrapper (keeps things within the column width)
 \newenvironment{cveducation}{
-  \vspace{0.8em}% <-- adjust this value as needed
+  \vspace{\acvSectionContentTopSkip}% match Experience/Skills content spacing
   \setlength{\tabcolsep}{0pt}% no extra horizontal padding
   \renewcommand{\arraystretch}{1.1}% row spacing
 }{}
