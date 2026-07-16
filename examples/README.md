@@ -6,7 +6,7 @@ A reusable library of full, unabridged achievement write-ups — the raw materia
 
 One file per story, named `<company-or-context-slug>.md`, with frontmatter tagging which criteria/behaviours it evidences:
 
-```
+```text
 ---
 company: <employer>
 context: <one-line project context>
